@@ -51,10 +51,6 @@ public class DriveToPositionCommand extends BaseCommand {
         // need : speed
         // ----> speed = change in position over time distance over time
         // current position - previous position
-
-        //
-
-
         // getting our error
         currentPosition = pose.getPosition();
         double error = goalPosition - currentPosition;
@@ -72,7 +68,6 @@ public class DriveToPositionCommand extends BaseCommand {
 
         // returns true if finished
         // returns false if not finished
-
         // finished conditions:
         // 1. at goal position
         // 2. basically no speed (not moving)
